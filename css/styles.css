@@ -1,0 +1,47 @@
+/* .title {
+    color: yellowgreen;
+} */
+
+:root {
+    --text-color: green;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Универсальный
+Тег
+Id
+Класс
+Атрибут
+Потомок
+Ребенок
+ */
+
+.link {
+    color: var(--text-color)
+
+.link:focus {
+    color: teal;
+}
+
+.link:hover {
+    color: black;
+}
+
+.btn {
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+.btn:focus {
+    background-color: blue;
+}
+/* .btn:active {
+    background-color: green;
+} */
