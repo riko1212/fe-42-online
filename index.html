@@ -25,9 +25,11 @@
         <header class="header">
             <div class="container header-container">
                 <nav class="header-navigation">
-                    <a href="" class="header-logo"
-                        ><img src="./images/logo.svg" alt="Лого сайта"
-                    /></a>
+                    <a href="" class="header-logo">
+                        <svg class="logo-icon" width="66" height="55">
+                            <use href="./images/sprite.svg#icon-logo"></use>
+                        </svg>
+                    </a>
                     <ul class="header-list list">
                         <li class="header-item">
                             <a class="header-link link" href="">О нас</a>
@@ -58,20 +60,25 @@
         <main>
             <section class="hero">
                 <div class="container hero-container">
-                    <ul class="hero-list list">
-                        <li class="hero-item">
-                            <a href="" class="hero-link social-link link"
-                                >Instagram</a
-                            >
-                        </li>
-                        <li class="hero-item">
-                            <a href="" class="hero-link social-link link"
-                                >Youtube</a
-                            >
-                        </li>
-                    </ul>
+                    <div class="hero-left">
+                        <ul class="hero-list list">
+                            <li class="hero-item">
+                                <a href="" class="hero-link social-link link"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="hero-item">
+                                <a href="" class="hero-link social-link link"
+                                    >Youtube</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                     <div class="hero-right">
-                        <p lang="en" class="pre-title hero-pre-title">
+                        <p
+                            lang="en"
+                            class="pre-title pre-title-light hero-pre-title"
+                        >
                             A hair salon for men in Kyiv
                         </p>
                         <h1 lang="en" class="hero-title">BarberShop</h1>
@@ -103,7 +110,9 @@
                         </li>
                     </ul>
                     <div class="about-right">
-                        <p class="pre-title about-pre-title">О нас</p>
+                        <p class="pre-title pre-title-dark about-pre-title">
+                            О нас
+                        </p>
                         <h2 class="about-title section-title">
                             Лучший Барбершоп твоего города
                         </h2>
@@ -127,12 +136,12 @@
             </section>
             <section class="prices section">
                 <div class="container">
-                    <p class="pre-title prices-pre-title">
+                    <p class="pre-title pre-title-light prices-pre-title">
                         Проведи время в компании лучших мастеров
                     </p>
                     <h2 class="prices-title section-title">Услуги и цены</h2>
                     <div class="prices-wrap">
-                        <ul class="prices-list list">
+                        <ul class="prices-list prices-list-left list">
                             <li class="prices-item">
                                 <p class="prices-type prices-item-text">
                                     Мужская стрижка
@@ -166,7 +175,7 @@
                                 >
                             </li>
                         </ul>
-                        <ul class="prices-list list">
+                        <ul class="prices-list prices-list-right list">
                             <li class="prices-item">
                                 <p class="prices-type prices-item-text">
                                     Cтрижка у стажера
@@ -237,7 +246,7 @@
                         </ul>
                     </div>
                     <div class="reasons-right">
-                        <p class="pre-title reasons-pre-title">
+                        <p class="pre-title pre-title-dark reasons-pre-title">
                             старая традиционная школа
                         </p>
                         <h2 class="reasons-title section-title">
@@ -252,7 +261,7 @@
             </section>
             <section class="masters">
                 <div class="container">
-                    <p class="pre-title masters-pre-title">
+                    <p class="pre-title pre-title-dark masters-pre-title">
                         для настоящих ценителей атмосферы
                     </p>
                     <h2 class="masters-title section-title">Наши мастера</h2>
@@ -271,6 +280,60 @@
                                 <p lang="en" class="masters-item-text">
                                     Extreme Barber
                                 </p>
+                                <ul class="masters-item-list social-list list">
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li class="masters-item">
@@ -287,6 +350,60 @@
                                 <p lang="en" class="masters-item-text">
                                     Extreme Barber
                                 </p>
+                                <ul class="masters-item-list social-list list">
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li class="masters-item">
@@ -303,6 +420,60 @@
                                 <p lang="en" class="masters-item-text">
                                     Extreme Barber
                                 </p>
+                                <ul class="masters-item-list social-list list">
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link link">
+                                            <svg
+                                                class="social-icon"
+                                                width="20"
+                                                height="20"
+                                            >
+                                                <use
+                                                    href="./images/sprite.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
@@ -310,7 +481,7 @@
             </section>
             <section class="gallery">
                 <div class="container">
-                    <p class="pre-title gallery-pre-title">
+                    <p class="pre-title pre-title-dark gallery-pre-title">
                         На латинском языке “барба” означает “борода”
                     </p>
                     <h2 class="visually-hidden">Галерея</h2>
