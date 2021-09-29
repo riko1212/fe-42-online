@@ -71,6 +71,12 @@ body {
     border: 1px solid var(--accent-color);
     border-radius: 25px;
     background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #ffffff;
 }
 
 .pre-title {
@@ -84,6 +90,11 @@ body {
 .after-title {
     font-size: 18px;
     line-height: 1.67;
+}
+
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 .section-title {
@@ -149,6 +160,11 @@ body {
     color: var(--header-text-color);
 }
 
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
 .header-tel-link {
     margin-right: 40px;
 }
@@ -205,18 +221,42 @@ body {
 
 /*----------- ABOUT------------- */
 
+.about-container {
+    display: flex;
+}
 .about-pre-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
 }
 
 .about-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .about-after-title {
-    color: var(--primary-text-color);
+    margin-bottom: 20px;
 }
 
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    margin-bottom: 40px;
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+
+.about-item + .about-item {
+    margin-left: 30px;
+}
 .about-btn {
     color: #303030;
 }
@@ -228,17 +268,40 @@ body {
 }
 
 .prices-pre-title {
-    color: var(--primary-text-color);
+    color: var(--third-text-color);
+    margin-bottom: 20px;
 }
 
 .prices-title {
     color: var(--primary-title-color);
+    margin-bottom: 44px;
 }
 
 .prices-item-text {
     font-size: 18px;
     line-height: 1.67;
-    color: var(--primary-text-color);
+    color: var(--third-text-color);
+}
+
+.prices-wrap {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.prices-list {
+    width: 50%;
+    padding: 30px 40px;
+    border: 1px solid var(--third-text-color);
+}
+
+.prices-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+    margin-bottom: 0;
 }
 
 .prices-btn {
@@ -247,14 +310,46 @@ body {
 
 /*----------- REASONS------------- */
 
+.reasons-container {
+    display: flex;
+}
+
+.reasons-list {
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reasons-item {
+    width: 170px;
+    height: 133px;
+    border: 1px solid black;
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.reasons-item-dif {
+    padding: 20px;
+    letter-spacing: 0em;
+}
+
 .reasons-count {
     font-weight: 700;
     font-size: 42px;
     line-height: calc(57 / 42);
     text-align: center;
     letter-spacing: 0.05em;
+    margin-bottom: 6px;
 
     color: var(--secondary-text-color);
+}
+
+.reasons-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.reasons-item:nth-child(even) {
+    margin-top: 30px;
 }
 
 .reasons-item-text {
@@ -267,14 +362,23 @@ body {
 
 .reasons-pre-title {
     color: var(--secondary-text-color);
+    margin-bottom: 20px;
 }
 
 .reasons-title {
     color: var(--secondary-title-color);
+    margin-bottom: 20px;
 }
 
 .reasons-after-title {
     color: var(--primary-text-color);
+}
+
+.reasons-left {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-shrink: 0;
 }
 
 /*----------- MASTERS------------- */
@@ -348,7 +452,20 @@ body {
     margin-left: 30px;
 }
 
+/* ----------------------------------------------- */
+
+.contact-wrap {
+    background-color: var(--secondary-title-color);
+}
+.contact-wrap-container {
+    display: flex;
+}
+
 /*----------- ONLINE------------- */
+
+.online {
+    width: 50%;
+}
 .online-title {
     color: var(--primary-title-color);
 }
@@ -356,10 +473,20 @@ body {
 /*----------- CONTACTS------------- */
 
 .contacts {
-    background-color: var(--secondary-title-color);
+    width: 50%;
+    padding-left: 100px;
 }
 .contacts-title {
     color: var(--primary-title-color);
+    margin-bottom: 40px;
+}
+
+.contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts-list {
+    margin-bottom: 70px;
 }
 
 .contacts-address {
@@ -379,6 +506,8 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .contacts-time-text {
@@ -387,11 +516,29 @@ body {
     color: var(--third-text-color);
 }
 
+.footer {
+    padding-top: 57px;
+    padding-bottom: 55px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-copy {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     color: var(--third-text-color);
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item + .footer-item {
+    margin-left: 40px;
 }
 
 .footer-link {
