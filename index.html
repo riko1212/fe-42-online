@@ -18,6 +18,10 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
 
@@ -25,14 +29,24 @@
         <header class="header">
             <div class="container header-container">
                 <nav class="header-navigation">
-                    <a href="" class="header-logo">
+                    <a
+                        href=""
+                        class="
+                            header-logo
+                            animate__animated
+                            animate__rubberBand
+                            animate__infinite
+                        "
+                    >
                         <svg class="logo-icon" width="66" height="55">
                             <use href="./images/sprite.svg#icon-logo"></use>
                         </svg>
                     </a>
                     <ul class="header-list list">
                         <li class="header-item">
-                            <a class="header-link link" href="">О нас</a>
+                            <a class="header-link link current" href=""
+                                >О нас</a
+                            >
                         </li>
                         <li class="header-item">
                             <a class="header-link link" href=""
@@ -51,7 +65,11 @@
                     <a class="header-tel-link link" href="tel:+380441111111"
                         >+38 044 111 11 11</a
                     >
-                    <button class="header-btn btn" type="button">
+                    <button
+                        class="header-btn btn"
+                        data-modal-open
+                        type="button"
+                    >
                         онлайн-запись
                     </button>
                 </div>
@@ -63,12 +81,16 @@
                     <div class="hero-left">
                         <ul class="hero-list list">
                             <li class="hero-item">
-                                <a href="" class="hero-link social-link link"
+                                <a
+                                    href=""
+                                    class="hero-link social-link-list link"
                                     >Instagram</a
                                 >
                             </li>
                             <li class="hero-item">
-                                <a href="" class="hero-link social-link link"
+                                <a
+                                    href=""
+                                    class="hero-link social-link-list link"
                                     >Youtube</a
                                 >
                             </li>
@@ -337,12 +359,20 @@
                             </div>
                         </li>
                         <li class="masters-item">
-                            <img
-                                src="./images/master-img-2.jpg"
-                                alt="барбер стрижет клиента"
-                                width="370"
-                                height="346"
-                            />
+                            <div class="masters-top-wrapper">
+                                <img
+                                    src="./images/master-img-2.jpg"
+                                    alt="барбер стрижет клиента"
+                                    width="370"
+                                    height="346"
+                                />
+                                <p class="masters-top-text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Impedit quae pariatur unde
+                                    cupiditate facere! Illo repellat quam
+                                    repudiandae officiis consequuntur.
+                                </p>
+                            </div>
                             <div class="masters-item-bottom">
                                 <h3 lang="en" class="masters-item-title">
                                     Michele Doe
@@ -566,17 +596,25 @@
                 <p class="footer-copy">&copy;Copyright 2020</p>
                 <ul class="footer-list list">
                     <li class="footer-item">
-                        <a class="footer-link social-link link" href=""
+                        <a class="footer-link social-link-list link" href=""
                             >Instagram</a
                         >
                     </li>
                     <li class="footer-item">
-                        <a class="footer-link social-link link" href=""
+                        <a class="footer-link social-link-list link" href=""
                             >Youtube</a
                         >
                     </li>
                 </ul>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>
+                    X
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
