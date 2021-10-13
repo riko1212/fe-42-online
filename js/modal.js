@@ -14,9 +14,8 @@
     refs.modal.classList.toggle('is-hidden');
   }
   function removeModal(e) {
-    if (e.target.value !== modalItem) {
+    if (e.target === refs.modal) {
       refs.modal.classList.add('is-hidden');
     }
-    
   }
 })();
