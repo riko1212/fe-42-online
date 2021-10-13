@@ -557,6 +557,31 @@
                         <h2 class="online-title section-title">
                             Онлайн-запись
                         </h2>
+                        <form action="#" class="online-form">
+                            <div class="inputs">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Имя*"
+                                    class="online-input"
+                                />
+                                <input
+                                    type="tel"
+                                    name="tel"
+                                    placeholder="Телефон*"
+                                    class="online-input online-input-short"
+                                />
+                            </div>
+
+                            <textarea
+                                name="message"
+                                placeholder="сообщение"
+                                class="online-text"
+                            ></textarea>
+                            <button type="submit" class="btn online-btn">
+                                отправить
+                            </button>
+                        </form>
                     </section>
                     <section class="contacts section">
                         <h2 class="contacts-title section-title">Контакты</h2>
@@ -613,6 +638,94 @@
                 <button type="button" class="close-btn" data-modal-close>
                     X
                 </button>
+                <p class="modal-title">Заголовок модального окна</p>
+                <form action="#" class="modal-form">
+                    <div class="modal-field">
+                        <label for="user-name" class="input-label"
+                            >Ваше имя</label
+                        >
+                        <span class="input-wrapper">
+                            <input
+                                type="text"
+                                name="user-name"
+                                id="user-name"
+                                class="modal-input"
+                                placeholder="John Dou"
+                            />
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-email" class="input-label"
+                            >Ваша почта</label
+                        >
+                        <span class="input-wrapper">
+                            <input
+                                type="email"
+                                name="user-email"
+                                id="user-email"
+                                class="modal-input"
+                                placeholder="mail@mail"
+                            />
+                            <svg class="input-icon" width="18" height="18">
+                                <use
+                                    href="./images/sprite.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-tel" class="input-label"
+                            >Ваш телефон</label
+                        >
+                        <span class="input-wrapper">
+                            <input
+                                type="tel"
+                                name="user-tel"
+                                id="user-tel"
+                                class="modal-input"
+                                placeholder="0961111111"
+                            />
+                            <svg class="input-icon" width="18" height="18">
+                                <use
+                                    href="./images/sprite.svg#icon-phone"
+                                ></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-text" class="input-label"
+                            >Ваш текст</label
+                        >
+                        <textarea
+                            name="user-text"
+                            id="user-text"
+                            class="modal-text-input"
+                            placeholder="Коммент"
+                        ></textarea>
+                    </div>
+                    <input
+                        type="checkbox"
+                        id="modal-checkbox"
+                        class="modal-checkbox visually-hidden"
+                    />
+                    <label for="modal-checkbox" class="check-text">
+                        <span>
+                            <svg class="check-icon" width="11" height="8">
+                                <use
+                                    href="./images/sprite.svg#icon-check"
+                                ></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с супер важнной&#160;
+                        <a href="">политикой пользования</a></label
+                    >
+                    <button type="submit" class="btn modal-btn">
+                        Отправить
+                    </button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
