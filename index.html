@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <form action="#" class="contact-form">
+            <label
+                >Ваше имя
+                <input
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    class="form-input"
+                    placeholder="John"
+                    required
+                    minlength="2"
+                />
+            </label>
+            <label for="user-tel">Ваше телефон</label>
+            <input
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+                class="form-input"
+                placeholder="+38(098)111-11-11"
+            />
+            <label for="user-email">Ваша почта</label>
+            <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="form-input"
+                placeholder="test@mail"
+            />
+            <label for="text"> Введите техт</label>
+            <textarea
+                name="text"
+                id="text"
+                class="form-text"
+                placeholder="Коммент"
+            ></textarea>
+            <fieldset>
+                <legend>Род занятий</legend>
+                <label for="student">Студент</label>
+                <input
+                    type="radio"
+                    name="actions"
+                    value="student"
+                    id="student"
+                />
+                <label for="pupil">Школьник</label>
+                <input type="radio" name="actions" value="pupil" id="pupil" />
+            </fieldset>
+            <fieldset>
+                <legend>Хобби</legend>
+                <label>Спорт</label>
+                <input type="checkbox" name="hobby" value="sport" checked />
+                <label>Книги</label>
+                <input type="checkbox" name="hobby" value="books" />
+                <label>Игри</label>
+                <input type="checkbox" name="hobby" value="games" />
+            </fieldset>
+            <label for="city">Виберите город</label>
+            <select name="city" id="city" class="form-select">
+                <option value="paris">Paris</option>
+                <option value="london" selected>London</option>
+                <option value="rome">Rome</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+
+user-name=Name& user-tel=0999999999& user-email=test%40mail.ua& actions=student&
+hobby=sport& hobby=books& hobby=games#
