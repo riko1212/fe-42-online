@@ -1,0 +1,149 @@
+.modal-title {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-field {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    display: block;
+    position: relative;
+}
+
+.modal-input {
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #999999;
+    background: transparent;
+    padding-left: 40px;
+    padding-right: 20px;
+    outline: none;
+    &:focus {
+        border-color: var(--accent-color);
+    }
+    &:focus + .input-icon {
+        fill: var(--accent-color);
+    }
+}
+
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-text-input {
+    width: 100%;
+    height: 100px;
+    border-radius: 3px;
+    resize: none;
+    border: 1px solid #999999;
+    background: transparent;
+    padding: 10px;
+}
+
+.modal-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.check-text {
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+    align-items: center;
+      span {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #303030;
+        border-radius: 3px;
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+.modal-checkbox {
+    &:checked + .check-text span {
+        background-color: var(--accent-color);
+        border: none;
+    }
+}
+
+/* Через Фон */
+
+/* .check-text::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #303030;
+    border-radius: 3px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-checkbox:checked + .check-text::before {
+    background-image: url(../images/icon-check.svg);
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+/* Ползунок */
+
+/* .check-text::before {
+    content: "";
+    width: 40px;
+    height: 24px;
+    border: 1px solid #999999;
+    border-radius: 50px;
+    margin-right: 7px;
+    transition: background-color 300ms linear;
+    box-shadow: inset -2px 0 2px 2px rgba(157, 164, 189, 0.4);
+}
+.check-text::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999999;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    background-color: var(--third-text-color);
+    transition: transform 300ms linear, background-color 300ms linear;
+}
+
+.modal-checkbox:checked + .check-text::after {
+    transform: translate(14px);
+
+    background-color: #ffffff;
+}
+
+.modal-checkbox:checked + .check-text::before {
+    background-color: rgb(62, 202, 97);
+} */

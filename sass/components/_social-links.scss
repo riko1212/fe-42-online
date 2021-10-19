@@ -1,0 +1,11 @@
+.social-link-list {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: var(--secondary-title-color);
+    transition: color 300ms ease;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}

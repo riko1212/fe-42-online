@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 57px;
+    padding-bottom: 55px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: var(--third-text-color);
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item {
+  & + & {
+        margin-left: 40px;
+    }
+} 
+
+.footer-link {
+}

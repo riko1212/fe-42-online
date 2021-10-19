@@ -1,0 +1,43 @@
+.about {
+}
+
+.about-container {
+    display: flex;
+}
+.about-pre-title {
+    margin-bottom: 20px;
+}
+
+.about-title {
+    color: var(--secondary-title-color);
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.about-after-title {
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    margin-bottom: 40px;
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+
+.about-item {
+      + .about-item {
+        margin-left: 30px;
+    }
+} 
+.about-btn {
+    color: #303030;
+}
