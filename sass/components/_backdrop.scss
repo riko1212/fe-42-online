@@ -4,8 +4,7 @@
     height: 100vh;
     background-color: rgba(157, 164, 189, 0.6);
     top: 0;
-    display: flex;
-    align-items: center;
+    @extend %align-items;
     justify-content: center;
     transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
     &.is-hidden{

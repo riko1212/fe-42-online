@@ -1,24 +1,24 @@
 .about {
 }
 
-.about-container {
+.about__container {
     display: flex;
 }
-.about-pre-title {
+.about-right__pre-title {
     margin-bottom: 20px;
 }
 
-.about-title {
+.about-right__title {
     color: var(--secondary-title-color);
     margin-bottom: 20px;
     margin-bottom: 20px;
 }
 
-.about-after-title {
+.about-right__after-title {
     margin-bottom: 20px;
 }
 
-.about-text {
+.about-right__text {
     font-size: 14px;
     line-height: 1.86;
 
@@ -33,11 +33,11 @@
     margin-right: 64px;
 }
 
-.about-item {
-      + .about-item {
+.about-list__item {
+     & + & {
         margin-left: 30px;
     }
 } 
-.about-btn {
+.about-right__btn {
     color: #303030;
 }

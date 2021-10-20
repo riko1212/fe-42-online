@@ -8,11 +8,11 @@
     margin: 0 auto;
 }
 
-.prices-pre-title {
+.prices__pre-title {
     margin-bottom: 20px;
 }
 
-.prices-title {
+.prices__title {
     color: var(--primary-title-color);
     margin-bottom: 44px;
 }
@@ -33,7 +33,7 @@
     padding: 30px 40px;
 }
 
-.prices-list-left {
+.prices-list__left {
     background-image: linear-gradient(
         180deg,
         #171a24 0%,
@@ -41,7 +41,7 @@
     );
 }
 
-.prices-list-right {
+.prices-list__right {
     background-image: linear-gradient(
         180deg,
         #090b13 0%,
@@ -49,7 +49,7 @@
     );
 }
 
-.prices-item {
+.prices-list__item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -66,9 +66,8 @@
 }
 
 
-.prices-type {
+.prices-list__type {
     order: -1;
-    font-size: 22px;
 }
 
 
