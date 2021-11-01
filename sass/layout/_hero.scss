@@ -1,8 +1,13 @@
 .hero-container {
     display: flex;
+    width: 100%;
+    padding: 0;
 }
 
 .hero-left {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     width: 98px;
     display: flex;
     align-items: flex-end;
@@ -41,9 +46,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 272px;
-    padding-left: 91px;
-    padding-bottom: 206px;
+    // padding-top: 272px;
+    // padding-left: 91px;
+    // padding-bottom: 206px;
+    padding-top: 208px;
+    padding-left: 31px;
+    padding-bottom: 183px;
 }
 
 .hero-pre-title {
@@ -53,7 +61,7 @@
 .hero-title {
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 48px;
     line-height: calc(85 / 72);
     letter-spacing: 0.05em;
     color: var(--primary-title-color);

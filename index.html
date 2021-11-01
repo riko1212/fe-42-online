@@ -26,7 +26,7 @@
     </head>
 
     <body>
-        <!-- <header class="header">
+        <header class="header">
             <div class="container header-container">
                 <nav class="header-navigation">
                     <a
@@ -73,10 +73,50 @@
                         онлайн-запись
                     </button>
                 </div>
+                <button class="menu-open-btn"><span></span></button>
             </div>
-        </header> -->
+            <div class="backdrop is-hidden">
+                <div class="mob-menu">
+                    <div class="mob-menu-content">
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-item">
+                                <a href="" class="mob-menu-link link">О нас</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="" class="mob-menu-link link"
+                                    >Услуги и цены</a
+                                >
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="" class="mob-menu-link link"
+                                    >Мастера</a
+                                >
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="" class="mob-menu-link link"
+                                    >Контакты</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="mob-menu-bottom">
+                            <a href="" class="mob-menu-tel link"
+                                >+38 044 111 11 11</a
+                            >
+                            <button
+                                class="mob-menu-btn btn"
+                                data-modal-open
+                                type="button"
+                            >
+                                онлайн-запись
+                            </button>
+                        </div>
+                    </div>
+                    <button class="menu-close-btn"><span></span></button>
+                </div>
+            </div>
+        </header>
         <main>
-            <!-- <section class="hero">
+            <section class="hero">
                 <div class="container hero-container">
                     <div class="hero-left">
                         <ul class="hero-list list">
@@ -110,25 +150,57 @@
                         </p>
                     </div>
                 </div>
-            </section> -->
-            <!-- <section class="about section">
+            </section>
+            <section class="about section">
                 <div class="container about__container">
                     <ul class="about-list list">
                         <li class="about-list__item">
-                            <img
-                                src="./images/about-img-1.jpg"
-                                alt="Барбер бреет шею"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/about-img-1.jpg    1x,
+                                        ./images/about-img-1-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/about-img-1-tab.jpg    1x,
+                                        ./images/about-img-1-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    src="./images/about-img-1.jpg"
+                                    alt="Барбер бреет шею"
+                                    width="270"
+                                    height="445"
+                                />
+                            </picture>
                         </li>
                         <li class="about-list__item">
-                            <img
-                                src="./images/about-img-2.jpg"
-                                alt="Барбер делает кантик"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/about-img-2.jpg    1x,
+                                        ./images/about-img-2-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/about-img-2-tab.jpg    1x,
+                                        ./images/about-img-2-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    src="./images/about-img-2.jpg"
+                                    alt="Барбер делает кантик"
+                                    width="270"
+                                    height="445"
+                                />
+                            </picture>
                         </li>
                     </ul>
                     <div class="about-right">
@@ -160,7 +232,7 @@
                         </button>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <section class="prices section">
                 <div class="container">
                     <p
@@ -313,6 +385,10 @@
                     <ul class="masters-list list">
                         <li class="masters-list__item">
                             <img
+                                srcset="
+                                    ./images/master-img-1.jpg    1x,
+                                    ./images/master-img-1-2x.jpg 2x
+                                "
                                 src="./images/master-img-1.jpg"
                                 alt="барбер стрижет клиента"
                                 width="370"
@@ -794,5 +870,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

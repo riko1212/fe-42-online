@@ -20,10 +20,14 @@
 }
 
 .logo-icon {
-    fill: #303030;
+    // fill: #303030;
+    fill: #ffffff;
 }
 
 .header-list {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     display: flex;
 }
 
@@ -34,6 +38,9 @@
 }
 
 .header-contact {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     padding-right: 10px;
     margin-left: auto;
     display: flex;
@@ -83,4 +90,109 @@
         display: block;
         bottom: -50px;
     }
+}
+
+.menu-open-btn, .menu-close-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: auto;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-open-btn span {
+    width: 24px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+    
+}
+
+.menu-open-btn span::after, .menu-open-btn span::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+
+
+}
+
+.menu-open-btn span::before {
+    bottom: 7px;
+}
+
+.menu-open-btn span::after {
+    top: 7px;
+}
+
+.menu-close-btn span{
+width: 24px;
+    height: 3px;
+    background-color: #000000;
+    display: block;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.menu-close-btn span::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    display: block;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.mob-menu {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    background-color: #ffffff;
+    right: 0;
+    top: 0;
+    padding: 48px 31px 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mob-menu-content {
+    padding-top: 70px;
+}
+
+.mob-menu-list {
+    margin-bottom: 64px;
+}
+
+.mob-menu-item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .mob-menu-link {
+        font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        letter-spacing: 0.1em;
+        color: #303030;
+    }
+
+    
+}
+
+.mob-menu-tel {
+    font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        letter-spacing: 0.1em;
+        color: #303030;
+        display: block;
+        margin-bottom: 24px;    
 }
